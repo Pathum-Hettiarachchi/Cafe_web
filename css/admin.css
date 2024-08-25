@@ -1,0 +1,243 @@
+@import url('https://fonts.googleapis.com/css2?family=Aladin&family=Kanit:ital,wght@0,400;0,500;0,600;0,700;1,400&family=Open+Sans:wght@300;400;500;600&display=swap');
+
+*{
+    padding: 0;
+    margin: 0;
+}
+.container {
+width: 100%;
+height: 100vh;
+display: flex;
+}
+
+.left-side {
+    height: 95vh;
+  width: 33%;
+  background: radial-gradient(60.15% 60.15% at 50% 50%, #D88F4E 0%, #705135 100%);
+  padding: 20px;
+  z-index: 0;
+  display: flex;
+  justify-content: start;
+}
+
+.right-side {
+    height: 95vh;
+    top: 0;
+    right: 0;
+position: absolute;
+  width: 65%;
+  background:#F5EBDF;
+  padding: 20px;
+  border-top-left-radius: 50px;
+  border-bottom-left-radius: 50px;
+  z-index: 1;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+.left-side .img_box{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+.left-side .img_box h2{
+    color: #fff;
+    font-family: 'kanit' ,sans-serif;
+    font-weight: 500;
+    font-size: 1.8rem;
+}
+.left-side .img_box p{
+    margin-top: 10px;
+    width: 250px;
+    font-size: 0.8rem;
+    color: #fff;
+    font-family: 'open sans' ,sans-serif;
+    text-align: center;
+    
+}
+.underline{
+    position: relative;
+    width: 250px;
+    padding: 0.5px;
+    background: #fff;
+}
+
+
+
+.loging_box{
+    max-width: 600px;
+    min-height: 650px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+.loging_box h1{
+  text-align: center;
+  margin-bottom: 20px;
+  font-family: 'kanit' ,sans-serif;
+  font-size: 2em;
+  font-weight: 500;
+}
+.loging_box p{
+    font-family: 'open sans' ,sans-serif;
+    font-size: 1rem;
+}
+.loging_box p span{
+    font-weight: bold;
+    color: #705135;
+    margin: 15px;
+}
+.loging_box p a{
+  text-decoration: none;
+}
+.input_box{
+    display: flex;
+    flex-direction: column;
+}
+.input_box input{
+    width: 90%;
+    font-size: 1rem;
+    padding: 13px;
+    border-radius: 10px;
+    font-family: 'kanit' ,sans-serif;
+    border: none;
+    margin: 8px;
+}
+
+#btn{
+    width: 300px;
+  background: #705135;  
+  border: none;
+  color: #fff;
+  font-weight: bold;
+  cursor: pointer;
+  margin:25px 0;
+}
+.quick_box{
+    display: flex;
+    margin-top: 25px;
+
+}
+.quick_box .google{
+    width: 290px;
+    padding: 2px;
+    border: 1px solid #705135;
+    display: flex;
+    margin-right: 20px;
+}
+.quick_box .google a{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-decoration: none;
+    color: #333;
+}
+.quick_box .google a img{
+    margin: 0px 12px;
+}
+.right-side.img_box2 img{
+    display: none;
+}
+
+@media screen and (max-width: 768px) {
+
+    .left-side {
+        display: none;
+}
+.quick_box{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+.quick_box .google{
+    margin: 8px;
+}
+.right-side {
+  width: 100%;
+  border-radius: none;
+
+}
+.loging_box{
+    max-width: 450px;
+    min-height: auto;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+
+}
+@media screen and (max-width: 500px) {
+    .left-side {
+        display: none;
+}
+.right-side {
+  width: 100%;
+  border-radius: none;
+
+}
+.loging_box{
+    max-width: 350px;
+    min-height: auto;
+    display: flex;
+    margin:auto;
+}
+
+}
+/*=========================================== Create new account page===========================*/
+.right-side .name_box{
+    width: 100%;
+    display: flex;
+}
+.right-side .name_box input{
+    width: 41%;
+}
+.right-side p{
+    font-family: 'open sans' ,sans-serif;
+}
+.loging_box2 h1{
+    text-align: left;
+    margin-bottom: 20px;
+    font-family: 'kanit' ,sans-serif;
+    font-size: 2em;
+    font-weight: 500;
+    padding: 13px;
+  }
+  .nav_logo{
+    width: 100%;
+    display: flex;
+    justify-content: left;
+    position: absolute;
+    top: 0;
+    left: 0;
+    z-index: 10;
+  }
+  @media screen and (max-width: 768px) {
+
+.loging_box2{
+    max-width: 450px;
+    min-height: auto;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+.nav_logo{
+    background: #705135;
+    height: 70px;
+  }
+
+
+}
+@media screen and (max-width: 500px) {
+
+.loging_box2{
+    max-width: 350px;
+    min-height: auto;
+    display: flex;
+    margin:auto;
+}
+
+}

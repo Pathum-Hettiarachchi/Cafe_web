@@ -1,0 +1,664 @@
+
+@import url('https://fonts.googleapis.com/css2?family=Aladin&family=Kanit:ital,wght@0,400;0,500;0,600;0,700;1,400&family=Open+Sans:wght@300;400;500;600&display=swap');
+
+*{
+    padding: 0;
+    margin: 0;
+    font-family: sans-serif;
+}
+body{
+    background: #F5EBDF;
+    height: auto;
+}
+.nav_bar{
+    width: 100%;
+    height: 50px;
+    background: #fff;
+    position: fixed;
+    z-index: 10;
+}
+.hero{
+    width: 100%;
+    height: 100vh;
+}
+
+.hero img{
+    width: 100%;
+    height: 85vh;
+
+}
+.logo h2{
+    font-family: 'Aladin', cursive;
+    font-weight: 700;
+    cursor: pointer;
+}
+
+nav ul{
+    list-style-type: none;
+
+}
+nav ul li{
+    display: inline-block;
+    margin-right: 20px;
+
+
+}
+nav ul li a{
+    font-family: 'Open Sans', sans-serif;
+    font-weight: 500;
+    text-decoration: none;
+    font-size: 18px;
+    color: #000;
+
+}
+.nav_inner{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding:10px 30px;
+}
+.profile a{
+    padding: 10px;
+}
+.hero_text{
+    display: flex;
+    flex-direction: column;
+    align-items: end;
+    position: absolute;
+    right: 0;
+    top: 50vh;
+    margin-right: 15px;
+
+    
+}
+.hero_text h1{
+    font-family: kanit ,sans-serif;
+    line-height: 110%;
+    text-align: right;
+    font-size: 3em;
+    margin-bottom: 12px;
+}
+.hero_text p{
+    text-align: right;
+    font-family: 'Open Sans',sans-serif;
+    margin-bottom: 15px;
+    font-size: 1em;
+    font-weight: light;
+    color: #333333;
+}
+.hero_text .btn1{
+    width: 150px;
+    height: 45px;
+    border-radius: 50px;
+    background: #896F57;
+    border: none;
+    color: #fff;
+    cursor: pointer;
+    font-weight: bold;
+}
+/*end===================================================== hero section==========================================*/
+
+/*start===================================================== Menu section==========================================*/
+.menu_sec{
+  display: flex; 
+  flex-direction: column;
+  justify-content: center;
+  margin-top: 20px;
+}
+.menu_text{
+    max-width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.menu_text h1{
+    font-family: 'kanit' ,sans-serif;
+    text-align: center;
+    font-weight: 500;
+    font-size: 2em;
+    margin-bottom: 5px;
+}
+.menu_text h1 span{
+    font-family: 'Aladin' ,sans-serif;
+    font-size: 1.5em;
+}
+.menu_text img{
+    margin-bottom: 20px;
+}
+.menu_text p{
+    font-family: 'kanit' ,sans-serif;
+    margin-bottom: 25px;
+    font-size: 1.2em;
+    color: #333333;
+    margin-top: 20px;
+    text-align: center;
+}
+
+.menu_items{
+    margin-top: 25px;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-gap: 5px;
+    margin-bottom: 40px;
+}
+.item1{
+    cursor: pointer;
+    padding: 10px;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    transition: 0.3s;
+}
+.text_box{
+    margin: 8px;
+    padding: 5px;
+    display: flex;
+    flex-direction: column;
+    justify-content:center;
+    align-items: start;
+}
+.text_box h3{
+    font-family: 'kanit' ,sans-serif;
+    font-size: 1.3em;
+    font-weight: 500;
+    margin-bottom: 5px;
+}
+.item1:hover{
+    transform: translateY(-5px);
+}
+.text_box p{
+    font-family: 'open sans' ,sans-serif;
+
+}
+/*end===================================================== Menu section==========================================*/
+
+/*start===================================================== about us section==========================================*/
+.about_sec{
+    max-width: 100%;
+    min-height: 800px;
+    margin-top: 40px;
+    background: url(images/b2.jpg);
+    display: flex; 
+    flex-direction: column;
+    justify-content: center;
+    margin-top: 40px;
+}
+.about_text{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    position: relative;
+    top: 10px;
+}
+.about_text h1{
+    font-family: 'kanit' ,sans-serif;
+    text-align: center;
+    font-weight: 500;
+    font-size: 2em;
+    margin-bottom: 3px;
+}
+.row{
+	display: flex;
+	align-items: center;
+	flex-wrap: wrap;
+	justify-content: space-around;
+}
+.col{
+	flex-basis: 50%;
+	min-width: 300px;
+    display: flex;
+    justify-content: center;
+
+}
+.col img{
+    max-width: 450px;
+    padding: 50px 0;
+    margin: 15px;
+}
+.col .p_box{
+    max-width: 450px;
+}
+.col .p_box p{
+    font-family: 'kanit' ,sans-serif;
+    font-size: 1em;
+    text-align: left;
+    margin: 5px;
+    color: #333333;
+}
+.col .btn2{
+    width: 150px;
+    height: 45px;
+    margin-top: 20px;
+    border-radius: 50px;
+    border: 2px solid #333333;
+    background: none;
+    color: #333;
+    cursor: pointer;
+    font-weight: bold;
+    transition: 0.5s all;
+}
+.col .btn2:hover{
+    background: #896F57;
+    border: none;
+    color: #fff;
+    transform: translateX(10px);
+}
+/*end===================================================== about us section==========================================*/
+/*start===================================================== Number Count section==========================================*/
+.num_sec{
+    max-width: 100%;
+    min-height: 200px;
+    background: #896F57;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    border: 1px solid #000;
+}
+.num_items{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    transition: 0.2s linear;
+}
+.num_items h1{
+    font-family: 'kanit' ,sans-serif;
+    font-weight: bold;
+    font-size: 2.5em;
+    color: #fff;
+}
+.num_items p{
+    font-family: 'open sans' ,sans-serif;
+    font-weight: bold;
+    font-size: 1.5em;
+    color: #fff;
+
+}
+/*end===================================================== Number Count section==========================================*/
+/*start===================================================== Featured section==========================================*/
+.featured_sec{
+    max-width: 100%;
+    height: auto;
+    margin-top: 40px;
+
+}
+
+.featured_text{
+    margin-top: 40px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+.featured_text h1{
+    font-family: 'kanit' ,sans-serif;
+    text-align: center;
+    font-weight: 500;
+    font-size: 2em;
+    margin-bottom: 3px;
+}
+
+.items::-webkit-scrollbar{
+    display: none;
+}
+
+.items{
+    width: 98%;
+    height: auto;
+    display: grid;
+    grid-template-columns: 200px 200px 200px 200px;
+    grid-gap: 10px;
+    position: relative;
+}
+
+
+
+section .product{
+    min-width: 200px;
+    height: 300px;
+    background: linear-gradient(180deg, #FFFFFF 39.29%, #F1D1B3 100%);
+    box-shadow: 10px 10px 20px rgba(0, 0, 0, 0.25);
+    border-radius: 20px;
+    position: relative;
+    transition: 0.5s;
+
+}
+picture{
+    display: flex;
+    justify-content: center;
+    margin: 20px auto;
+    padding: 20px;
+}
+picture img{
+    width: 70px;
+    height: 90px;
+}
+
+header{
+    margin: 15px;
+    display: flex;
+    justify-content: center;
+}
+
+
+header p span{
+    font-size: 40px;
+        margin: 0 5px;
+        cursor: pointer;
+        color: #555;
+         width: 30px;
+        height: 30px;
+        display: inline-block;
+        line-height: 19px;
+        text-align: center;
+        border-radius: 3px;
+    }
+    header p span:hover{
+        background: #222;
+        color: white;
+    }
+
+
+
+
+@media (max-width: 768px) {
+    .text h1{
+        font-size: 35px;
+    }
+    .text p{
+        width: 90%;
+    }
+    header h1{
+        font-size: 25px;
+    }
+    header p span{
+        font-size: 30px;
+    }
+    section .product {
+        min-width: 49%;
+        margin:  0 10px  0 0;
+    }
+    .detail, .button{
+        font-size: 16px;
+    }
+    a{
+        padding: 6px 10px;
+    }
+}
+/*end===================================================== Fetured section==========================================*/
+
+/*start===================================================== why us section==========================================*/
+.whyus_sec{
+    max-width: 100%;
+    min-height: 800px;
+    background: url(images/b2.jpg);
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+.why_title{
+    max-width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+}
+.why_title h1{
+    text-align: center;
+    font-family: 'kanit' ,sans-serif;
+    font-weight: bold;
+    margin: 25px 0px;
+}
+.why_box{
+    display: grid;
+    grid-template-columns: 300px 300px 300px;
+    column-gap: 50px;
+
+}
+.why_box .boxes{
+    max-width: 100%;
+    border: 1px solid #000;
+    height: 270px;
+    margin: 0px 20px;
+    padding: 15px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    transition: .5s all;
+    cursor: pointer;
+}
+.why_box .boxes h2{
+    font-family: 'kanit' ,sans-serif;
+    font-weight: 500;
+    text-align: center;
+    margin:15px 0px;
+}
+.why_box .boxes p{
+    font-family: 'kanit' ,sans-serif;
+    color: #333333;
+    line-height: 115%;
+    font-size: 1rem;
+    text-align: center;
+}
+.why_box .boxes:hover{
+    transform: translateY(10px);
+}
+/*end===================================================== why us section==========================================*/
+
+/*end===================================================== bottom image section==========================================*/
+.img_sec{
+    max-width: 100%;
+    height: 600px;
+    background: url(images/bimg.png);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+.img_sec h1{
+    font-family: 'kanit' ,sans-serif;
+    text-align: center;
+    margin-bottom: 15px;
+    font-size: 2.5em;
+    font-weight: 500;
+    color: #fff;
+}
+.img_sec p{
+    margin: 15px 0px;
+    max-width: 800px;
+    font-family: 'kanit' ,sans-serif;
+    text-align: center;
+    font-size: 1.1em;
+    font-weight: 300;
+    color: #fff;
+}
+.social{
+    margin-top: 30px;
+}
+.social a{
+    display: inline;
+    margin: 0px 10px;
+}
+.social a img{
+    transition: .5s all;
+}
+.social a img:hover{
+    transform: translateY(-10px);
+}
+.img_sec h2{
+    font-family: 'kanit' ,sans-serif;
+    text-align: center;
+    margin-top: 10px;
+    font-size: 1.8em;
+    font-weight: 500;
+    color: #fff;
+}
+/*end===================================================== bottom image  section==========================================*/
+
+/*start===================================================== footer section==========================================*/
+.footer_sec{
+    display: grid;
+    grid-template-columns:auto auto auto auto;
+    margin: 40px 20px 0px 20px;
+}
+.inner_box{
+    display: flex;
+    align-items: center;
+    margin: 25px 0px;
+}
+.inner_box img{
+    margin: 0px 10px;
+    transition: 0.5s all;
+}
+.inner_box a{
+    text-decoration: none;
+}
+.inner_box a p{
+    font-family: 'kanit' ,sans-serif;
+    font-size: 1.1rem;
+    color: #333;
+}
+.footer_box h2{
+    font-family: 'kanit' ,sans-serif;
+    margin: 20px 10px;
+    font-weight: 500;
+    text-align: left;
+}
+.inner_box img:hover{
+    transform: translateX(-10px);
+}
+/*end===================================================== footer section==========================================*/
+.reveal{
+    position: relative;
+    transform: translateY(150px);
+    opacity: 0;
+    transition: 1s all ease;
+  }
+  
+  .reveal.active{
+    transform: translateY(0);
+    opacity: 1;
+  }
+
+
+
+
+
+
+
+
+
+  /*---------------------------------------------- pre Loader --------------------------------------*/
+
+.preloader-wrapper{
+    width: 100%;
+    height: 100vh;
+    left: 0;
+    top: 0;
+    position: absolute;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background: #896F57;
+	z-index: 20;
+}
+.preloader-wrapper .pre-title{
+	position: absolute;
+	color: #fff;
+	display: inline-block;
+    text-align: center;
+	margin: auto;
+	top: 80px;
+	text-transform: uppercase;
+  
+	
+}
+
+.sk-folding-cube {
+  margin: 20px auto;
+  width: 40px;
+  height: 40px;
+  position: relative;
+  -webkit-transform: rotateZ(45deg);
+          transform: rotateZ(45deg);
+}
+
+.sk-folding-cube .sk-cube {
+  float: left;
+  width: 50%;
+  height: 50%;
+  position: relative;
+  -webkit-transform: scale(1.1);
+      -ms-transform: scale(1.1);
+          transform: scale(1.1); 
+}
+.sk-folding-cube .sk-cube:before {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: #fff;
+  -webkit-animation: sk-foldCubeAngle 2.4s infinite linear both;
+          animation: sk-foldCubeAngle 2.4s infinite linear both;
+  -webkit-transform-origin: 100% 100%;
+      -ms-transform-origin: 100% 100%;
+          transform-origin: 100% 100%;
+}
+.sk-folding-cube .sk-cube2 {
+  -webkit-transform: scale(1.1) rotateZ(90deg);
+          transform: scale(1.1) rotateZ(90deg);
+}
+.sk-folding-cube .sk-cube3 {
+  -webkit-transform: scale(1.1) rotateZ(180deg);
+          transform: scale(1.1) rotateZ(180deg);
+}
+.sk-folding-cube .sk-cube4 {
+  -webkit-transform: scale(1.1) rotateZ(270deg);
+          transform: scale(1.1) rotateZ(270deg);
+}
+.sk-folding-cube .sk-cube2:before {
+  -webkit-animation-delay: 0.3s;
+          animation-delay: 0.3s;
+}
+.sk-folding-cube .sk-cube3:before {
+  -webkit-animation-delay: 0.6s;
+          animation-delay: 0.6s; 
+}
+.sk-folding-cube .sk-cube4:before {
+  -webkit-animation-delay: 0.9s;
+          animation-delay: 0.9s;
+}
+@-webkit-keyframes sk-foldCubeAngle {
+  0%, 10% {
+    -webkit-transform: perspective(140px) rotateX(-180deg);
+            transform: perspective(140px) rotateX(-180deg);
+    opacity: 0; 
+  } 25%, 75% {
+    -webkit-transform: perspective(140px) rotateX(0deg);
+            transform: perspective(140px) rotateX(0deg);
+    opacity: 1; 
+  } 90%, 100% {
+    -webkit-transform: perspective(140px) rotateY(180deg);
+            transform: perspective(140px) rotateY(180deg);
+    opacity: 0; 
+  } 
+}
+
+@keyframes sk-foldCubeAngle {
+  0%, 10% {
+    -webkit-transform: perspective(140px) rotateX(-180deg);
+            transform: perspective(140px) rotateX(-180deg);
+    opacity: 0; 
+  } 25%, 75% {
+    -webkit-transform: perspective(140px) rotateX(0deg);
+            transform: perspective(140px) rotateX(0deg);
+    opacity: 1; 
+  } 90%, 100% {
+    -webkit-transform: perspective(140px) rotateY(180deg);
+            transform: perspective(140px) rotateY(180deg);
+    opacity: 0; 
+  }
+}
